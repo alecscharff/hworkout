@@ -8,7 +8,7 @@ import { CompletePage } from './pages/CompletePage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/hworkout">
       <WorkoutProvider>
         <Routes>
           <Route path="/" element={<HomePage />} />
