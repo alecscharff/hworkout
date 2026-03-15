@@ -50,7 +50,7 @@ function GifImage({
   exerciseName: string
 }) {
   const [hasError, setHasError] = useState(false)
-  const src = `/gifs/${gifFilename}`
+  const src = `${import.meta.env.BASE_URL}gifs/${gifFilename}`
 
   if (hasError) {
     return (
