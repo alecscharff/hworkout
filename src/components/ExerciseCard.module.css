@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  background-color: var(--color-cream);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-card);
+}
+
+.cardComplete {
+  opacity: 0.75;
+}
+
+.cardSkipped {
+  opacity: 0.55;
+}
+
+.indexBadge {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-sage-light);
+  color: var(--color-sage-dark);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indexBadgeComplete {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+}
+
+.indexBadgeSkipped {
+  background-color: var(--color-cream);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-sage-light);
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.target {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.format {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-sage-dark);
+  background-color: var(--color-sage-light);
+  padding: 2px var(--space-xs);
+  border-radius: var(--border-radius-pill);
+}
+
+.statusIcon {
+  flex-shrink: 0;
+  font-size: var(--font-size-lg);
+  line-height: 1;
+}

@@ -1,0 +1,48 @@
+/* src/styles/variables.css */
+:root {
+  /* Palette */
+  --color-sage: #A8BFA0;           /* Primary -- buttons, accents */
+  --color-sage-light: #C5D4BF;     /* Hover states, backgrounds */
+  --color-sage-dark: #7A9470;      /* Active states, text on light */
+  --color-coral: #E8A598;          /* Accent -- badges, highlights */
+  --color-coral-light: #F2C4BB;    /* Soft accent backgrounds */
+  --color-warm-white: #FAF8F5;     /* Page background */
+  --color-cream: #F3EDE4;          /* Card backgrounds */
+  --color-text-primary: #3D3D3D;   /* Main text */
+  --color-text-secondary: #6B6B6B; /* Secondary text */
+  --color-text-light: #9A9A9A;     /* Muted text */
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 2rem;      /* 32px */
+  --font-size-timer: 3rem;    /* 48px -- timer display */
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Layout */
+  --max-width: 480px;           /* Mobile-first, max content width */
+  --border-radius: 12px;
+  --border-radius-sm: 8px;
+  --border-radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.08);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}

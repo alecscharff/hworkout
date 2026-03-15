@@ -1,0 +1,17 @@
+{
+  "name": "hworkout",
+  "short_name": "hworkout",
+  "description": "Your toning routine — upper body, lower body, and core workouts.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F5",
+  "theme_color": "#A8BFA0",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

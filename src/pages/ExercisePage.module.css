@@ -1,0 +1,324 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 120px; /* space for sticky action buttons */
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-md) var(--space-sm);
+  gap: var(--space-md);
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: var(--border-radius-sm);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.backBtn:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-cream);
+}
+
+.progressWrapper {
+  flex: 1;
+}
+
+.phaseBanner {
+  margin: 0 var(--space-md) var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-coral-light);
+  border-left: 4px solid var(--color-coral);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.content {
+  padding: 0 var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.phaseBadge {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--border-radius-pill);
+}
+
+.phaseBadgeWarmup {
+  background-color: var(--color-coral-light);
+  color: #c0584e;
+}
+
+.phaseBadgeMain {
+  background-color: var(--color-sage-light);
+  color: var(--color-sage-dark);
+}
+
+.phaseBadgeCooldown {
+  background-color: #e0ece8;
+  color: #3a7060;
+}
+
+.exerciseName {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.1;
+}
+
+.gifArea {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: var(--color-cream);
+}
+
+.gifImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gifPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  background-color: var(--color-cream);
+  border: 2px dashed var(--color-sage-light);
+  border-radius: var(--border-radius);
+}
+
+.placeholderIcon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.placeholderName {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: 0 var(--space-md);
+}
+
+.benefitSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.targetLabel {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+}
+
+.targetMuscles {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-sage-dark);
+}
+
+.benefitText {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.formatSection {
+  background-color: var(--color-cream);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.formatIcon {
+  font-size: var(--font-size-xl);
+  flex-shrink: 0;
+}
+
+.formatDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.formatLabel {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+}
+
+.formatText {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.equipmentText {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.tipsSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tipsSectionTitle {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.tipsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tipItem {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+
+.tipNumber {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.tipText {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.timerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-lg);
+  background-color: var(--color-cream);
+  border-radius: var(--border-radius);
+}
+
+.timerLabel {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+}
+
+/* Sticky action buttons */
+.stickyActions {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, var(--max-width));
+  padding: var(--space-md);
+  background: linear-gradient(to top, var(--color-warm-white) 80%, transparent);
+  padding-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.btnComplete {
+  width: 100%;
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  padding: var(--space-md);
+  border-radius: var(--border-radius-pill);
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-button);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btnComplete:hover:not(:disabled) {
+  background-color: var(--color-sage-dark);
+}
+
+.btnComplete:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btnComplete:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btnSkip {
+  width: 100%;
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  padding: var(--space-sm);
+  border-radius: var(--border-radius-pill);
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.btnSkip:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-cream);
+}
